@@ -1,0 +1,22 @@
+{
+  "name": "algopractice",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.0",
+  "description": "Practice coding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovacicmichael/AlgoPractice.git"
+  },
+  "author": "Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kovacicmichael/AlgoPractice/issues"
+  },
+  "homepage": "https://github.com/kovacicmichael/AlgoPractice#readme"
+}
