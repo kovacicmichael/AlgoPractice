@@ -4,23 +4,40 @@
 
 
 // let reverse = (str) => {
-// 	let oldstring = str.split("")
-// 	let newstring = [];
-// 	for (i = oldstring.length - 1; i >= 0; i--) {
-// 		newstring.push(str[i]);
+// 	let newstring = '';
+// 	// for (i = str.length - 1; i >= 0; i--) {
+// 	// 	newstring = newstring + str[i];
+// 	// }
+// 	for(let character of str){
+// 		newstring = character + newstring;
 // 	}
-// 	return newstring.join("");
+// 	return newstring;
 // };
+
+let reverse = str => {
+	return str.split('').reduce((reversed, character) => {
+		return character + reversed;
+	}, "");
+}
 
 //reverse("this is cool");
 
 
 //or you can use this method
 
-let reverse = (str) => {
-	let strArray = str.split('');
-	let newString = strArray.reverse();
-	return newString.join('');
-}
+// let reverse = (str) => {
+// 	let strArray = str.split('');
+// 	let newString = strArray.reverse();
+// 	return newString.join('');
+// }
+
+// or an even shorter form
+
+// let reverse = (str) => {
+// 	return str
+// 		.split('')
+// 		.reverse()
+// 		.join('');
+// }
 
 module.exports = reverse;
