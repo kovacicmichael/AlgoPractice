@@ -17,11 +17,11 @@ function chunk(array, size) {
 	// 	index += size;
 	// }
 	// return chunked;
-	const chunked = [];
 
 	for (let element of array){
+		console.log("element: " + element);
 		const last = chunked[chunked.length - 1];
-		console.log(last)
+		console.log("last: " + last)
 		if(!last || last.length === size){
 			chunked.push([element])
 		}else{
